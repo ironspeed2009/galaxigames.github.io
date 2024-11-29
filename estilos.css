@@ -1,0 +1,909 @@
+body{
+    margin: 0%;
+    background-color:black ;
+}
+@font-face {
+    font-family: f1;
+    src: url("fuentes/fuente1.ttf");
+}
+@font-face {
+    font-family: f2;
+    src: url("fuentes/fuente2.ttf");
+}
+@font-face {
+    font-family: f3;
+    src: url("fuentes/fuente3.ttf");
+}
+main{
+    background-color: #2e2e33;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+
+p{
+    color:white;
+}
+header{
+	color: #2e2e33;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav{
+    background-color: black;
+    padding: 0%;
+    font-size: 23px;
+    font-family: f1;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70% ;
+    height: auto;
+    align-items: center;
+    min-height: 15vh;
+    margin: 0%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.logo{
+    text-align: center;
+	display: flex;
+    justify-content: center; 
+    width: 10%;
+    height: auto;
+    margin: 0%;
+}
+.logo img{
+    height: auto;
+    width: 100%;
+}
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+.menus{
+    width: 80%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    height: auto;
+	list-style: none;
+	background-color:black;
+	text-decoration: none;
+    
+}
+
+.menus li{
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px; 
+    margin-left: 20px;  
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.menus p{
+    text-align: center;
+    height: auto;
+    font: 5px;
+}
+
+
+.menus li:hover ul{
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 25px;
+	display:block;
+	text-decoration: none;
+	transition: 5s;
+}
+nav a:link{
+    flex-wrap: wrap;
+}
+.menus ul {
+    flex-wrap: wrap;
+    text-align: center;
+    height: auto;
+	display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 15px; 
+    width: 300px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.menus ul li a {
+    text-align: center;
+    height: auto;
+	display: block;
+    padding: 15px 20px; 
+    border-radius: 10px; 
+    color: white;
+    text-decoration: none; 
+    flex-wrap: wrap;
+}
+
+.menus ul li a:hover{
+	color:rgb(255, 255, 255);
+	  color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, blue, violet);
+    transition: background 0.3s ease;
+	 opacity: 0.9; 
+}
+
+.menu li a{
+    flex-wrap: wrap;
+    text-align: center;
+    height: auto;
+	text-decoration: none;
+	padding: 10px;
+}
+
+a:link{
+	text-decoration: none;
+}
+a{
+	color:white;
+}
+
+nav ul ul {
+    flex-wrap: wrap;
+    height: auto;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+footer{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+.footer-section.iconos img {
+    width: 30px; 
+    height: auto;
+    margin: 0 15px; 
+    filter: grayscale(100%); 
+    transition: filter 0.3s;
+}
+
+.footer-section.iconos img:hover {
+    filter: grayscale(0%); 
+}
+
+.footer-section.links a {
+    font-size: 20px;
+    font-family: f1;
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-section.links a:hover {
+    color: #ffffff; 
+}
+
+.footer-section.copyright {
+    font-family: f1;
+    display: flex;
+    text-align: center;
+    padding: 3%;
+    font-size: 18px;
+    color: white; 
+    line-height: 20px;
+}
+
+.footer-section.logo{
+    height: auto;
+    width: 100%;
+}
+
+.footer-section.logo img {
+    width: 100%;
+    height: auto;
+    margin: 0 1px; 
+    filter: grayscale(100%); 
+    transition: filter 3s;
+}
+
+.footer-section.logo img:hover {
+    filter: grayscale(0%);
+}
+
+.footer-section.links {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+    
+    clear: both;
+    margin-top: 0px; 
+}
+
+.footer-section.iconos {
+    clear: both;
+    margin-top: 0px; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+footer {
+    margin-top: 35px; 
+    color: black;
+}
+
+.footer-section.copyright {
+    clear: both;
+    margin-top: 0px;
+    border-top: 3px solid #ccc; 
+    padding-top: 20px; 
+}
+
+section{
+    height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rectangulosh1{
+display: flex;
+height: auto;
+text-align: center;
+ width: 100%;
+ background-color:black;
+ font-size: 50px;
+ font-family: f1; 
+ color: white; 
+}
+.rectangulosh1 h1{
+    text-align: center;
+    height: auto;
+}
+
+.rectangulosh2{
+    color: white; 
+    font-size:30px;
+    text-align:center;
+    height:auto;
+    width:100%;
+    background-color:black;;
+    color: white;
+	margin-bottom:24px;
+    font-family: f1;
+}
+.rectangulosh2 h2{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.descripcion-juego {
+    height: auto;
+    width: 100%;
+    color: white; 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;; 
+}
+.descripcion-juego{
+    display: flex;
+    height: auto;
+}
+.logo-juego{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.logo-juego img{
+    height: auto;
+    width: 35%;
+}
+.descripcion-juego .descripcion {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    height: auto;
+    width: 65%;
+    color: white;
+    font-family: f1; 
+}
+
+.tiendas, .expansiones, .caracteristicas {
+    
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;;
+}
+.tiendas{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+.tiendas img{
+    height: auto;
+    width: 100%;
+}
+.logos-tiendas{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.expansiones{
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+}
+.caracteristicas{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.expansionesnosotros{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+	background-color: black;;
+	color: white;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lista-centrada {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    list-style-position: inside; 
+    padding: 0;  
+    display: inline-block; 
+     list-style-position: inside;
+  padding: 0;
+  text-align: left;
+  justify-content: center;
+  font-size: 15px;
+  font-family: f1;
+}
+.lista-centrada ul>li {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lista-centrada ul>li:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo */
+    transform: scale(1.1); /* Aumenta el tamaño del elemento */
+}
+
+.lista-centrada li {
+    margin-left: -20px; 
+     margin-bottom: 10px; 
+  color: white; 
+  margin-top:15px;
+  text-align: center;
+}
+
+
+.logos-tiendas img {
+    width: 80px;
+    margin: 10px;
+}
+
+.pjuegos{
+    color:white;
+    font-size:20px;
+    padding:4px;
+}
+
+.pnosotros{
+	color:white;
+	font-size:25px;
+	margin-right:10%;
+	margin-left:10%;
+}
+
+
+
+.padrenosotros{
+    height: auto;
+	width:100%;
+	min-height:50vh;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	align-items:center;
+	padding:20px;
+	border-radius:20px;
+}
+
+.tarjetas{
+	border-style:solid;
+	border-width:3px;
+	border-color:black;
+	border-radius:5%;
+	background-color:black;;
+	width:10%;
+	padding:5px;
+	height:25%;
+}
+
+.imgnosotros{
+    width: 100%;
+	
+}
+
+.rocket{
+	display:block;
+	margin-left:25%;
+}
+.reloj {
+    font-size: 60px;
+    background-color: black;;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+.hora-texto {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+/*pagina del ark*/
+
+
+
+.wrapper {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    margin: 15px;
+    margin-top: 50px;
+
+  }
+  
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    
+  }
+  
+  .container:hover .card1 {
+    transform: rotateY(10deg);
+  }
+  
+  .card1 .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #e3e3e3;
+    border-radius: 10px 10px 0 0;
+  }
+  .image img{
+    width: 50%;
+    height: auto;
+  }
+  
+  .card1 .story {
+    padding: 15px;
+    height: auto;
+  }
+  
+  .card1 .story .info {
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+  }
+  .info{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card1 .story h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3%;
+    height: auto;
+  }
+  
+  .card1 .story p {
+    height: auto;
+    font-size: 17px;
+    color: black;
+    font-family: f1;
+  }
+  
+  
+  .page {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+ /*galeria*/
+ .galeria{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+ } 
+  .card-container {
+    perspective: 1000px; /* Agrega profundidad al contenedor */
+}
+
+.card {
+    padding: 0%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 533px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateY(0);
+    transition: transform 0.6s ease;
+    border-radius: 10%;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta la parte posterior cuando se voltea */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Estilos de la cara frontal */
+.card-front {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.card-front img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+/* Estilos de la cara posterior */
+.card-back {
+    display: flex;
+    text-align: center;
+    font-family: f3;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo completamente transparente */;
+    color:black;
+    transform: rotateY(180deg); /* La parte posterior está girada por 180 grados */
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+    font-size: 30px;
+    background-image: url("imagenes/galeria/fondogale.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("imagenes/galeria/fondogale.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+
+}
+.card-back h2{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+/* Efecto de flip cuando se pasa el mouse por encima */
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+/* Transición suave en el hover */
+.card-inner {
+    transition: transform 0.6s ease;
+}
+.titulogaleria{
+    padding-top: 20px ;
+    display: flex;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: f3;
+    font-size: 40px;
+    color: white;
+}
+.infofoto{
+    display: flex;
+    text-align: center;
+    font-family: f1;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width:800px)
+{
+    footer{
+        flex-direction: column;
+
+    }
+    .footer-section.links{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer-section.links a:link{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-section.copyright{
+        line-height: 25px;
+        padding: 10px;
+        text-align: center;
+        font-size: 17px;
+    }
+    .footer-section.iconos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card{
+        width: 333px;
+        height: 200px;
+    }
+    .card-front{
+        width: 333px;
+        height: 200px;
+    }
+    .titulofoto h2{
+        height: auto;
+        font-size: 25px;
+    }
+    .titulofoto{
+        height: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .infofoto p{
+        font-size: 15px;
+        height: auto;
+
+    }
+    .infofoto{
+        text-align: center;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .rectangulosh1 h1{
+        font-size: 35px;
+    }
+    .logo-juego img{
+        height: auto;
+        width: 70%;
+    }
+    .rectangulosh2{
+        font-size: 25px;
+    }
+    .pjuegos{
+        font-size: 15px;
+    }
+
+    .logo{
+        text-align: center;
+        display: flex;
+        justify-content: center; 
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+    .logo img{
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:400px)
+{
+
+    .titulofoto h2{
+        height: auto;
+        font-size: 18px;
+    }
+    .titulofoto{
+        height: auto;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+    .card{
+        width: 233px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .card-front{
+        width: 233px;
+        height: 150px;
+    }
+
+    .image img{
+        width: 100%;
+        height: auto;
+      }
+      
+      .card1 .story {
+        padding: 10px;
+        display: flex;
+        height: auto;
+        width: 100%;
+      }
+      
+      .card1 .story .info {
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .card1{
+        width: 70%;
+    
+      }
+      .info
+      {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .card1 .story h3{
+        font-size: 15px;
+      }
+
+      .card1 .story p{
+        font-size: 12px;
+      }
+
+      .menus {
+        font-size: 20px;
+      }
+
+
+
+
+
+
+    
+}
+
+@media screen and (max-width:1580px)
+{
+    header{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    nav, .menus{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
